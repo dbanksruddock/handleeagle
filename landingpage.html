@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"> <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to our landing page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel elit euismod, bibendum elit ut, facilisis metus.</p>
+            <a href="#" class="btn">Get started</a>
+        </section>
+        
+        <section class="features">
+            <h2>Our Features</h2>
+            <ul>
+                <li><i class="fas fa-check"></i> Feature 1</li><button class="buy-btn">Buy Now</button>
+
+
+                <li><i class="fas fa-check"></i> Feature 2</li><button class="buy-btn">Buy Now</button>
+
+                <li><i class="fas fa-check"></i> Feature 3</li><button class="buy-btn">Buy Now</button>
+
+            </ul>
+        </section>
+        
+        <section class="pricing">
+            <h2>Pricing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel elit euismod, bibendum elit ut, facilisis metus.</p>
+            <ul>
+                <li><span>1 time downpayment</span> <strong>$800</strong>/month</li>
+                <li><span>$20 a month for 1 year1</span> <strong>$20</strong>/month</li>
+                <li><span>Insurance</span> <strong>+$50</strong>/month</li>
+
+<section class="payment-form">
+  <h2>Enter Your Payment Details</h2>
+  <form id="payment-form">
+    <label for="card-element">
+      Credit or debit card
+    </label>
+    <div id="card-element">
+      <!-- A Stripe Element will be inserted here. -->
+    </div>
+
+    <!-- Used to display form errors. -->
+    <div id="card-errors" role="alert"></div>
+
+    <button type="submit">Submit Payment</button>
+  </form>
+</section>
+
+            </ul>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1MvGR5BnEFMcASCCccRUZi2K"
+  publishable-key="pk_live_51Mv69oBnEFMcASCCo0o8JmZXJh5hVRfD7DvYqDF6Dn5hrJWCZTwDQnNt44ZSeXc9iI8ZE6zWSzHYbGG03UowhvmL00KpEiWh65"
+>
+</stripe-buy-button>
+<button class="buy-btn">Buy Now</button>
+
+    <footer>
+        <p>&copy; 2023 - Landing Page</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
